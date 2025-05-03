@@ -22,17 +22,12 @@
 </head>
 <body>
     <header>
-        <div class="box">
-            <img src="img/kicks.gif" alt="Logo" class="picture">
-        </div>
-        <div class="title">
-            <h1>Milihuellas</h1>
-            <p>Inspira en cada paso que das</p>
-        </div>
-        <div class="buttons">
-            <button><a href="AboutUs.php">Conócenos</a></button>
-            <button><a href="https://web.whatsapp.com/" target="_blank"><img src="img/redes/icons8-whatsapp.gif" alt="whatsapp"/></a></button>
-            <button><a href="ListaCompras.php"><img src="img/redes/icons8-agregar-a-carrito-de-compras.gif" alt="listaCompra"></a></button>
+        <div>
+            <nav class="buttons">
+                <a id="nosotros" href="AboutUs.php">Conócenos</a>
+                <button id="wsp"><a href="https://web.whatsapp.com/" target="_blank"><img src="img/redes/icons8-whatsapp.gif" alt="whatsapp"/></a></button>
+                <button id="compra"><a href="ListaCompras.php"><img src="img/redes/icons8-comprar.gif" alt="listaCompra"></a></button>
+            </nav>
         </div>
     </header>
     <section class="marcas">    
