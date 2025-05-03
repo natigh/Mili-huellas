@@ -60,7 +60,7 @@
                 />
                 <img
                   class="slider-item"
-                  src="img/carousel/download (1).gif"
+                  src="img/carousel/GIF by KLIKKLAKBAM.gif"
                 />
                 <img
                   class="slider-item"
@@ -68,7 +68,7 @@
                 />  
             </div>  
         </div>
-        <div>
+        <div class="redes">
             <a href="https://instagram.com" target="_blank"><img src="img/redes/icons8-instagram.gif" alt="instagram" /><br>
             <a href="https://facebook.com" target="_blank"><img src="img/redes/icons8-facebook.gif" alt="facebook" /><br>
             <a href="https://tiktok.com" target="_blank"><img src="img/redes/icons8-tik-tok.gif" alt="Tiktok" /><br>   
