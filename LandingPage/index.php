@@ -30,44 +30,71 @@
             </nav>
         </div>
     </header>
-    <section class="marcas">    
-        <h3>Nuestras marcas</h3>
-        <ul>
-            <a href="marcas/Adidas.php">Adidas</a><br>
-            <a href="marcas/Nike.php">Nike</a><br>
-            <a href="marcas/Puma.php">Puma</a><br>
-            <a href="marcas/Skechers.php">Skechers</a><br>
-            <a href="marcas/Reebok.php">Reebok</a><br>
-            <a href="marcas/UnderArmour.php">Under Armour</a><br>
-            <a href="marcas/Fila.php">Fila</a><br>
-            <a href="marcas/Personalizados.php">Personalizados</a>
-        </ul>
+    <section>
+        <div>
+            <h3>Nuestras marcas</h3><br>
+            <ul>
+                <li><a href="marcas/Adidas.php">Adidas</a></li><br>
+                <li><a href="marcas/Nike.php">Nike</a></li><br>
+                <li><a href="marcas/Puma.php">Puma</a></li><br>
+                <li><a href="marcas/Skechers.php">Skechers</a></li><br>
+                <li><a href="marcas/Reebok.php">Reebok</a></li><br>
+                <li><a href="marcas/UnderArmour.php">Under Armour</a></li><br>
+                <li><a href="marcas/Fila.php">Fila</a></li><br>
+                <li><a href="marcas/Personalizados.php">Personalizados</a></li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <div class="slider-container">  
+                <img
+                  class="slider-item"
+                  src="img/carousel/Fashion Shopping GIF by Itaú Uruguay.gif"
+                />
+                <img
+                  class="slider-item"
+                  src="img/carousel/desc.gif"
+                />
+                <img
+                  class="slider-item"
+                  src="img/carousel/Car Brand GIF by LEAL - El Proveedor Del Restaurante.gif"
+                />
+                <img
+                  class="slider-item"
+                  src="img/carousel/download (1).gif"
+                />
+                <img
+                  class="slider-item"
+                  src="img/carousel/shoes.gif"
+                />  
+            </div>  
+        </div>
+        <div>
+            <a href="https://instagram.com" target="_blank"><img src="img/redes/icons8-instagram.gif" alt="instagram" /><br>
+            <a href="https://facebook.com" target="_blank"><img src="img/redes/icons8-facebook.gif" alt="facebook" /><br>
+            <a href="https://tiktok.com" target="_blank"><img src="img/redes/icons8-tik-tok.gif" alt="Tiktok" /><br>   
+        </div>
     </section>
-    <div class="redes">
-        <a href="https://instagram.com" target="_blank"><img src="img/redes/icons8-instagram.gif" alt="instagram"/></a><br>
-        <a href="https://facebook.com" target="_blank"><img src="img/redes/icons8-facebook.gif" alt="facebook"/></a><br>
-        <a href="https://tiktok.com" target="_blank"><img src="img/redes/icons8-tik-tok.gif" alt="Tiktok"/></a><br>   
-    </div>
-
     <footer>
-        <div>
-            <img src="img/redes/icons8-reloj.gif" alt="Horario"/><br>
-            <p>
-             Lunes a Sabado 10:00 a.m. a 8:00 p.m. <br>
+        <div class="inner-footer">
+            <div>
+                <img src="img/redes/icons8-reloj.gif" alt="Horario" width="20" height="20"/>
+            </div>
+            <div>Lunes a Sabado 10:00 a.m. a 8:00 p.m.</div>
         </div>
-        <div>
-            <a href="email.php"><img src="img/redes/icons8-mensaje.gif" alt="e-mail"/></a><br>
-            <p>
-                Contacto: Milihuellas@gmail.com
-            </p>
+        <div class="inner-footer">
+            <div>
+                <a href="email.php"><img src="img/redes/icons8-mensaje.gif" alt="e-mail" width="20" height="20" />
+            </div>
+            <div>Contacto: Milihuellas@gmail.com</div>
         </div>
-        <div>
-            <a href="preguntas.php"><img src="img/redes/icons8-pregunta.gif" alt="preguntas frecuentes"/></a><br>
-            <p>
-                Preguntas Frecuentes
-            </p>
+        <div class="inner-footer">
+            <div>
+                <a href="preguntas.php">
+                    <img src="img/redes/icons8-pregunta.gif" alt="preguntas frecuentes" width="20" height="20"/>
+                </a>
+            </div>
+            <div>Preguntas Frecuentes</div>
         </div>
-        
     </footer>
  
 </body>

@@ -5,7 +5,6 @@
     }
     
     header {
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -20,8 +19,8 @@
 
         nav {
             position: relative;
-            padding-left: 900px;
-            padding-bottom: 350px;
+            padding-left: 80rem;
+            padding-bottom: 30rem;
             margin: 1rem;
 
                 #wsp {
@@ -30,7 +29,7 @@
 
                 #nosotros {
                     background-color: black;
-                    font-family:Arial, Helvetica, sans-serif;
+                    font-family: Ink Free;
                     color: rgb(255, 255, 255);                
                 }
                 #nosotros:hover {
@@ -40,18 +39,99 @@
 
         #compra {
                 position: fixed;
-                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
             }
                 
-        }
+    }
 
     section {
-        padding-top: 3em;
-
+        display: flex; /* Activa Flexbox */
+        justify-content: space-between; /* Separa los elementos hacia los bordes */
+        align-items: center; /* Alinea verticalmente los elementos */
+        padding: 0;
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        
+        div {
+            margin: 0;
+            padding: 3rem;
+            margin: auto;
+        }
+        
         h3 {
-            font-family:Arial, Helvetica, sans-serif;
+            font-family: Ink Free;
             font-size: 2em; /* Adjust as needed */
             font-weight: 300;
+            position: center;
+        }
+        
+        li {
+            color:rgb(0, 0, 0);
+
+            :hover {
+                color: rgb(12, 236, 56);
+            }
+        }
+        
+        a {
+            color: rgb(0, 0, 0);
+            font-family: Ink Free;
+            position: center;
+
+            :hover {
+                color: rgb(12, 236, 56);
+            }
         }
     }
+
+    .image-container {
+        flex-basis: 75%;
+        padding: 1em;
+        margin-top: 7.5em;
+     
+        .slider-container {
+           display: flex;
+           width: 40em;
+           height: 30em;
+           overflow-x: scroll;
+           
+         
+           scroll-snap-type: x mandatory;
+     
+           img {
+              flex: 0 0 100%;
+              width: 100%;
+     
+              object-fit: cover;
+            
+              
+              scroll-snap-align: center;
+           }
+        }
+     }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+        width: 100%;
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        height: 10vh;
+
+        .inner-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+
+            div {
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+
 }
