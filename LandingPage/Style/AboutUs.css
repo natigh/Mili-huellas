@@ -38,10 +38,226 @@
         }
 
         #compra {
-                position: fixed;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
             }
                 
+    }
+
+    .hist1 {
+        display: flex;
+        justify-content: space-evenly; /* Separa los elementos hacia los bordes */
+        align-items: center; /* Alinea verticalmente los elementos */
+        width: 100%;
+        height: 20em;
+
+
+        .historia{
+            h3 {
+                font-family: Ink Free;
+                font-size: 2em; /* Adjust as needed */
+                font-weight: bold;
+                text-align: center;
+                padding: 0.5em 0;
+                color: rgba(139, 245, 192, 0.8);;
+            }
+    
+           p {
+                font-family: Ink Free;
+                font-size: 1em; /* Adjust as needed */
+                text-align: justify;
+            }
+        }
+        
+        .img-h {
+            margin-top: 4em;
+            
+            img{
+                box-shadow: 5px 5px 5px 5px rgba(139, 245, 192, 0.8);
+                height: 10em;
+                width: 20em;
+            }
+        }
+    }
+
+    .m-v {
+        display: flex;
+        justify-content: space-evenly; /* Separa los elementos hacia los bordes */
+        align-items: center; /* Alinea verticalmente los elementos */
+        width: 100%;
+        height: 30em;
+
+        .vision-mision {
+            h3 {
+                font-family: Ink Free;
+                font-size: 2em; /* Adjust as needed */
+                font-weight: bold;
+                text-align: center;
+                padding: 0.5em 0;
+                color: rgba(245, 187, 111, 0.8);;
+            }
+    
+           p {
+                font-family: Ink Free;
+                font-size: 1em; /* Adjust as needed */
+                text-align: justify;
+                text-align: center;
+            }
+        }
+
+        .img-m-v {
+            margin-top: .5em;
+            
+            img{
+                box-shadow: 5px 5px 5px 5px rgba(245, 187, 111, 0.8);
+                height: 18em;
+                width: 20em;
+            }
+        }
+    }
+
+    .valores {
+        display: flex;
+        justify-content: space-evenly; /* Separa los elementos hacia los bordes */
+        align-items: center; /* Alinea verticalmente los elementos */
+        width: 100%;
+        height: 20em;
+
+        .val {
+            h3 {
+                font-family: Ink Free;
+                font-size: 2em; /* Adjust as needed */
+                font-weight: bold;
+                text-align: center;
+                padding: 0.5em 0;
+                color: rgba(149, 195, 248, 0.8);;
+            }
+    
+           ul {
+                font-family: Ink Free;
+                font-size: 1em; /* Adjust as needed */
+                text-align: justify;
+                text-align: center;
+            }
+        }
+
+        .img-v {
+            margin-top: 1em;
+            
+            img{
+                box-shadow: 5px 5px 5px 5px rgba(149, 195, 248, 0.8);
+                height: 16em;
+                width: 15em;
+            }
+        }
+    }
+
+    .fundadoras {
+        background-image: url('../img/fundadoras/fondo.gif');
+        display: flex;
+        justify-content: space-evenly; /* Separa los elementos hacia los bordes */
+        align-items: center; /* Alinea verticalmente los elementos */
+        width: 100%;
+        height: 30em;
+        box-shadow:  5px 5px 5px 5px gray;
+        margin-top: 1em;
+        
+
+        h3 {
+            font-family: Ink Free;
+            font-size: 3em; /* Adjust as needed */
+            font-weight: bold;
+            text-align: center;
+            padding: 2em 0;
+            color: rgb(249, 249, 252);
+            padding-left: 1em;
+        }
+
+       .s-n{
+            display: flex;
+            justify-content: space-evenly; /* Separa los elementos hacia los bordes */
+            align-items: center; /* Alinea verticalmente los elementos */
+            width: 100%;
+            height: 30em;
+            .sandra {
+            
+            
+                h2 {
+                    font-family: Ink Free;
+                    font-size: 2em; /* Adjust as needed */
+                    text-align: justify;
+                    text-align: center;
+                    color: #37bdfc
+                }
+
+                img {
+                    box-shadow: 5px 5px 5px 5px rgba(13, 14, 13, 0.8);
+                    height: 20em;
+                    width: 15em;
+                    border-color: #37bdfc;
+                }
+            }
+
+            .natalia{
+                h2 {
+                    font-family: Ink Free;
+                    font-size: 2em; /* Adjust as needed */
+                    text-align: justify;
+                    text-align: center;
+                    color: #eaf820
+                }
+
+                img {
+                    box-shadow: 5px 5px 5px 5px rgba(13, 14, 13, 0.8);
+                    height: 20em;
+                    width: 15em;
+                    border-color: #eaf820;
+                } 
+            }
+
+       } 
+
+        .v-l {
+            display: flex;
+            justify-content: space-evenly; /* Separa los elementos hacia los bordes */
+            align-items: center; /* Alinea verticalmente los elementos */
+            width: 100%;
+            height: 30em;
+
+            .viviana {
+                h2 {
+                    font-family: Ink Free;
+                    font-size: 2em; /* Adjust as needed */
+                    text-align: justify;
+                    text-align: center;
+                    color: #3eeb55;
+                }
+
+                img {
+                    box-shadow: 5px 5px 5px 5px rgba(13, 14, 13, 0.8);
+                    height: 20em;
+                    width: 15em;
+                    border-color: #3eeb55;
+                } 
+            }
+
+            .laura {
+                h2 {
+                    font-family: Ink Free;
+                    font-size: 2em; /* Adjust as needed */
+                    text-align: justify;
+                    text-align: center;
+                    color: #eb08b2;
+                }
+
+                img {
+                    box-shadow: 5px 5px 5px 5px rgba(13, 14, 13, 0.8);
+                    height: 20em;
+                    width: 15em;
+                    border-color: #eb08b2;
+                } 
+            }
+        }   
+
     }
 
     footer {

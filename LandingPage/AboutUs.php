@@ -29,35 +29,70 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div>
+    <div class="hist1">
+        <div class="historia">
             <h3>Nuestra historia</h3>
             <p>
-            Milihuellas S.A.S. Fue creada el 14 de febrero del 2024 en la ciudad de Medellín (Antioquia) por el grupo de asociados Sandra Osorio Natalia García, Viviana Mosquera y Laura Ramírez. Surgió en el politécnico de Colombia con la iniciativa de crear una empresa que fabrique calzados enfocados en personas con algun problema en los pies, que sea de calidad, con originales diseños y asequibles al cliente en cuanto a precios. Conforme con los resultados obtenidos y a la búsqueda de nuevos mercados, Milihuellas amplío sus líneas de fabricación tradicionales e incursionó en el ámbito de la seguridad industrial, obteniendo excelentes resultados. 
-            </p><br>
-        </div>
-        <div>
-            <h3>Nuestra visión</h3>
-            <p>
-            La fábrica de calzado Milihuellas S.A.S. será reconocida para el año 2029 como la empresa colombiana líder en el sector del calzado a nivel nacional, que genera valor a sus grupos de interés a través de la excelencia operacional, compromiso con el desarrollo social, innovación y rentabilidad financiera.
-            </p><br>
-            <h3>Nuestra misión</h3>
-            <p>
-            Somos una compañía que garantiza el bienestar y comodidad de nuestros clientes a través de la innovación de calzados. Contamos con procesos para maximizar los recursos, un equipo humano comprometido y excelente ambiente de negociación en la cadena productiva, logrando así, generar rentabilidad razonable a los socios.
-            </p><br>
-        </div>
-        <div>
-            <h3>Valores corporativos</h3>
-            <p>
-                <ul>
-                    <li>Honestidad y Transparencia: Siempre hacemos nuestras acciones con honestidad y transparencia hacia nuestros clientes y colaboradores.
-                    Contribuimos activamente a la protección del medio ambiente y promovemos prácticas comerciales sostenibles.</li><br><br>
-                    <li>Cuidado al Cliente: Ponemos a nuestros clientes en el centro de todo lo que hacemos y les brindamos la mejor experiencia posible.</li><br><br>
-                    <li>Pasión por las Personas: Ponemos a las personas en el centro de todo lo que hacemos y priorizamos sus necesidades y deseos.</li>
-                </ul>
+            Milihuellas S.A.S. Fue creada el 14 de febrero del 2024 en la ciudad de Medellín (Antioquia) <br> por el grupo de asociados Sandra Osorio Natalia García, Viviana Mosquera y Laura Ramírez. <br>Surgió en el politécnico de Colombia con la iniciativa de crear una empresa que fabrique <br> calzados enfocados en personas con algun problema en los pies, que sea de calidad, con <br> originales diseños y asequibles al cliente en cuanto a precios. Conforme con los resultados obtenidos <br> y a la búsqueda de nuevos mercados, Milihuellas amplío sus líneas de fabricación tradicionales e <br> incursionó en el ámbito de la seguridad industrial, obteniendo excelentes resultados. 
             </p>
         </div>
-    </section>
+        <div class="img-h">
+            <img src="img/conocenos/2025-05-04 14_38_14-Milihuellas.png" alt="hostoria">
+        </div>
+    </div>
+    <div class="m-v">
+        <div class="img-m-v">
+            <img src="img/conocenos/mision.png" alt="mision-vision">
+        </div>
+        <div class="vision-mision">
+            <h3>Nuestra visión</h3>
+            <p>
+            La fábrica de calzado Milihuellas S.A.S. será reconocida para el año 2029 <br> como la empresa colombiana líder en el sector del calzado a nivel nacional, <br> que genera valor a sus grupos de interés a través de la excelencia operacional, <br> compromiso con el desarrollo social, innovación y rentabilidad financiera.
+            </p><br>
+        
+            <h3>Nuestra misión</h3>
+            <p>
+            Somos una compañía que garantiza el bienestar y comodidad de nuestros clientes <br> a través de la innovación de calzados. Contamos con procesos para maximizar los <br>recursos, un equipo humano comprometido y excelente ambiente de negociación en <br> la cadena productiva, logrando así, generar rentabilidad razonable a los socios.
+            </p><br>
+        </div>
+    </div>
+    <div class="valores">
+        <div class="val">
+            <h3>Valores corporativos</h3>
+            <ul>
+                    <li>Honestidad y Transparencia: Siempre hacemos nuestras acciones con honestidad y transparencia <br> hacia nuestros clientes y colaboradores.
+                    Contribuimos activamente a la protección del medio ambiente<br> y promovemos prácticas comerciales sostenibles.</li><br><br>
+                    <li>Cuidado al Cliente: Ponemos a nuestros clientes en el centro de todo lo que hacemos y les brindamos <br> la mejor experiencia posible.</li><br><br>
+                    <li>Pasión por las Personas: Ponemos a las personas en el centro de todo lo que hacemos y priorizamos <br> sus necesidades y deseos.</li>
+            </ul>
+        </div>
+        <div class="img-v">
+            <img src="img/conocenos/valores.png" alt="valores">
+        </div>
+    </div>
+    <div class="fundadoras">
+            <h3>Nuestro equipo</h3>
+            <div class="s-n">
+                <div class="sandra">
+                    <h2>Sandra Osorio</h2>
+                    <img src="img/fundadoras/sandra.png" alt="Sandra Osorio" />
+                </div>
+                <div class="natalia">
+                    <h2>Natalia García</h2>
+                    <img src="img/fundadoras/natalia.jpg" alt="Natalia García" />
+                </div>
+            </div>
+            <div class="v-l">
+                <div class="viviana">
+                    <h2>Viviana Mosquera</h2>
+                    <img src="img/fundadoras/viviana.jpg" alt="Viviana Mosquéra" />
+                </div>
+                <div class="laura">
+                    <h2>Laura Ramírez</h2>
+                    <img  src="img/fundadoras/laura.jpg" alt="Laura Ramírez" />
+                </div>
+            </div>    
+    </div>
     <footer>
         <div class="inner-footer">
             <div>
