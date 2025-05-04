@@ -1,6 +1,5 @@
 <?php
     require_once("config.php");
-    //die ("url".URL);
 ?>
 <!DOCTYPE html>
 <html lang="en">
