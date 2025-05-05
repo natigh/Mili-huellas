@@ -40,7 +40,7 @@
                 <li><a href="marcas/Reebok.php">Reebok</a></li><br>
                 <li><a href="marcas/UnderArmour.php">Under Armour</a></li><br>
                 <li><a href="marcas/Fila.php">Fila</a></li><br>
-                <li><a href="marcas/Personalizados.php">Personalizados</a></li>
+                <li><a href="marcas/Personalizados.php">Personalizados</a></li><br>
             </ul>
         </div>
         <div class="image-container">
