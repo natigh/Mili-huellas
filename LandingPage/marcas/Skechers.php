@@ -166,7 +166,7 @@
                 <h3>$350.000cop</h3>
             </div>
             <div class="h">
-                <img src="../img/pumskechersa/h2.png" alt="h0362">
+                <img src="../img/skechers/h2.png" alt="h0362">
                 <h3>Cod.H0362</h3>
                 <h3>$370.000cop</h3>
             </div>
@@ -219,7 +219,7 @@
             <div>
                 <a href="email.php"><img src="../img/redes/icons8-mensaje.gif" alt="e-mail" width="20" height="20" />
             </div>
-            <div>Contacto: Milihuellas@gmail.com</div>
+            <div>Contacto: Milihuellas06@gmail.com</div>
         </div>
         <div class="inner-footer">
             <div>
