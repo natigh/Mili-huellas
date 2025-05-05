@@ -38,19 +38,19 @@
         <div class="marcas">
             <h3>Nuestras marcas</h3><br>
             <ul>
-                <li><a href="marcas/Nike.php">Nike</a></li><br>
-                <li><a href="marcas/Puma.php">Puma</a></li><br>
-                <li><a href="marcas/Skechers.php">Skechers</a></li><br>
-                <li><a href="marcas/Reebok.php">Reebok</a></li><br>
-                <li><a href="marcas/UnderArmour.php">Under Armour</a></li><br>
-                <li><a href="marcas/Fila.php">Fila</a></li><br>
-                <li><a href="../marcas/Personalizados.php">Personalizados</a></li>
+            <li><a href="Nike.php">Nike</a></li><br>
+                <li><a href="Puma.php">Puma</a></li><br>
+                <li><a href="Skechers.php">Skechers</a></li><br>
+                <li><a href="Reebok.php">Reebok</a></li><br>
+                <li><a href="UnderArmour.php">Under Armour</a></li><br>
+                <li><a href="Fila.php">Fila</a></li><br>
+                <li><a href="Personalizados.php">Personalizados</a></li>
             </ul>
             <a href="../index.php"><img src="../img/iconos/icons8-volver-64.png" alt="atras"></a>
         </div>
         <div class="adidas">
             <div>
-                <h2>Niños</h2>
+                <h2>Niños - Adidas</h2>
             </div>
             <div></div>
             <div></div>
@@ -104,7 +104,7 @@
     <div class="adidas-fem">
         <div></div>
         <div class="mujer">
-            <div><h2>Mujer</h2></div>
+            <div><h2>Mujer - Adidas</h2></div>
             <div></div>
             <div></div>
             <div class="m">
@@ -157,7 +157,7 @@
     <div class="adidas-men">
         <div></div>
         <div class="hombre">
-            <h2>Hombre</h2>
+            <h2>Hombre - Adidas</h2>
             <div></div>
             <div></div>
             <div class="h">
