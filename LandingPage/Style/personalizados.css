@@ -1,0 +1,176 @@
+@media screen and (max-width: 1920px)  {
+    * {
+       margin: 0;
+       padding: 0;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        width: 100%;
+        height: 88vh; /* Altura del header */
+        box-shadow: 0 2px 35px rgb(0, 0, 0); 
+        background-image: url('../img/logomove.gif'); /* Ruta del GIF */
+        background-size: cover; /* Ajusta el GIF al tamaño del header */
+        background-repeat: no-repeat; /* Evita que el GIF se repita */
+        background-position: center; /* Centra el GIF dentro del header */
+
+        nav {
+            position: relative;
+            padding-left: 75rem;
+            padding-bottom: 30rem;
+            margin: 1rem;
+
+                #wsp {
+                    margin: 0 1rem;
+                }
+
+                #inicio {
+                    background-color: black;
+                    font-family: Ink Free;
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+
+                #nosotros {
+                    background-color: black;
+                    font-family: Ink Free;
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;              
+                }
+                #nosotros:hover {
+                    color: rgb(12, 236, 56);
+                }
+        }
+
+        #compra {
+                position: fixed;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+            }   
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Primera columna más pequeña (marcas), segunda más grande (formulario) */
+        gap: 5rem; /* Espaciado entre columnas */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: start; /* Alinea verticalmente al inicio */
+        padding: 2rem;
+        max-width: 800px; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor en la página */
+        font-family: ink free; /* Cambia la fuente a "Ink Free" */
+        
+        
+        
+        /* Estilo para las columnas */
+        .marcas, .personalizado {
+            padding: 2rem; /* Espaciado interno */
+            border-radius: 10px; /* Bordes redondeados */
+            background-image: url('../img/Motion\ Background\ GIF\ by\ Trakto.gif');
+            
+            
+        }
+        
+        /* Ajuste de la columna de marcas */
+        .marcas {
+            width: 100%; /* Ocupa todo el espacio de su columna */
+            height: 30rem; /* Altura de la columna */
+            margin-left: -20rem; /* Espacio a la izquierda */
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+
+            img {
+                margin-top: 2rem; /* Espacio superior para la imagen */
+                box-shadow: 4px 4px 10px rgba(252, 251, 251, 0.8); /* Sombra */
+                background-color: white; /* Color de fondo blanco */
+            }
+
+            li{
+                color: white;
+            }
+
+            a {
+                color: white; /* Color del texto */
+            }
+        }
+        
+        .marcas h3 {
+            text-align: center; /* Centra el título */
+            font-size: 2.5rem; /* Tamaño del título */
+            color: blueviolet; /* Color del texto */
+        }
+
+        
+        /* Ajuste de la columna del formulario */
+        .personalizado {
+            display: flex;
+            flex-direction: column; /* Coloca los elementos en columna */
+            gap: 2rem; /* Espaciado entre los campos */
+            width: 100%; /* Ocupa todo el espacio de su columna */
+            box-shadow: 0 4px 10px rgba(163, 61, 231, 0.8); /* Sombra */
+
+            h3 {
+                text-align: center; /* Centra el título */
+                font-size: 2.5rem; /* Tamaño del título */
+                color: blueviolet;
+            }
+        }
+        
+        .personalizado .form-group {
+            display: flex;
+            flex-direction: column; /* Alinea los campos verticalmente */
+            
+            color: white; /* Color del texto */
+            margin-bottom: 0.5rem;
+
+            input {
+                padding: 0.25rem; /* Espaciado interno */
+            }
+
+            select {
+                padding: 0.25rem;
+            }
+
+            textarea {
+                height: 30px;
+                width: 100%;
+                resize: none;
+            }
+        }
+        
+        .personalizado button {
+            align-self: center; /* Centra el botón */
+            padding: 0.8rem 1.5rem; /* Tamaño del botón */
+            font-size: 1.2rem; /* Tamaño de fuente del botón */
+            font-family: ink free; /* Cambia la fuente a "Ink Free" */
+            font-weight: bold; /* Negrita */
+            margin-top: 2rem;
+            box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.8); /* Sombra */
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+        width: 100%;
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        height: 10vh;
+
+        .inner-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+
+            div {
+                margin-right: 0.5em;
+            }
+        }
+    }
+}

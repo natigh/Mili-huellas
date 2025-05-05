@@ -38,7 +38,7 @@
         <div class="marcas">
             <h3>Nuestras marcas</h3><br>
             <ul>
-            <li><a href="Adidas.php">Adidas</a></li><br>
+                <li><a href="Adidas.php">Adidas</a></li><br>
                 <li><a href="Nike.php">Nike</a></li><br>
                 <li><a href="Puma.php">Puma</a></li><br>
                 <li><a href="Skechers.php">Skechers</a></li><br>

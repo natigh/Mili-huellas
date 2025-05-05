@@ -24,7 +24,7 @@
         <div>
             <nav class="buttons">
                 <a id="nosotros" href="AboutUs.php">Conócenos</a>
-                <button id="wsp"><a href="https://web.whatsapp.com/" target="_blank"><img src="img/redes/icons8-whatsapp.gif" alt="whatsapp"/></a></button>
+                <button id="wsp"><a href="https://wa.me/3013487174" target="_blank"><img src="img/redes/icons8-whatsapp.gif" alt="whatsapp"/></a></button>
                 <button id="compra"><a href="ListaCompras.php"><img src="img/redes/icons8-comprar.gif" alt="listaCompra"></a></button>
             </nav>
         </div>
@@ -69,8 +69,8 @@
         </div>
         <div class="redes">
             <a href="https://instagram.com" target="_blank"><img src="img/redes/icons8-instagram.gif" alt="instagram" /><br>
-            <a href="https://facebook.com" target="_blank"><img src="img/redes/icons8-facebook.gif" alt="facebook" /><br>
-            <a href="https://tiktok.com" target="_blank"><img src="img/redes/icons8-tik-tok.gif" alt="Tiktok" /><br>   
+            <a href="https://www.facebook.com/profile.php?id=61576237070815" target="_blank"><img src="img/redes/icons8-facebook.gif" alt="facebook" /><br>
+            <a href="https://www.tiktok.com/@milihuellas" target="_blank"><img src="img/redes/icons8-tik-tok.gif" alt="Tiktok" /><br>   
         </div>
     </section>
     <footer>

@@ -1,0 +1,105 @@
+@media screen and (max-width: 1920px)  {
+    * {
+       margin: 0;
+       padding: 0;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        width: 100%;
+        height: 88vh; /* Altura del header */
+        box-shadow: 0 2px 35px rgb(0, 0, 0); 
+        background-image: url('../img/logomove.gif'); /* Ruta del GIF */
+        background-size: cover; /* Ajusta el GIF al tamaño del header */
+        background-repeat: no-repeat; /* Evita que el GIF se repita */
+        background-position: center; /* Centra el GIF dentro del header */
+
+        nav {
+            position: relative;
+            padding-left: 75rem;
+            padding-bottom: 32rem;
+            margin: 1rem;
+
+                #wsp {
+                    margin: 0 1rem;
+                }
+
+                #inicio {
+                    background-color: black;
+                    font-family: Ink Free;
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+
+                #nosotros {
+                    background-color: black;
+                    font-family: Ink Free;
+                    color: rgb(255, 255, 255);
+                    font-size: 1.5rem;                
+                }
+                #nosotros:hover {
+                    color: rgb(12, 236, 56);
+                }
+        }
+
+        #compra {
+                position: fixed;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+            }
+                
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly; /* Separa los elementos hacia los bordes */
+        align-items: center; /* Alinea verticalmente los elementos */
+        width: 100%;
+        background-color: rgb(253, 252, 252); /* Fondo*/
+        padding-top: 2rem;
+        font-family: Ink Free;
+
+        h1 {
+            font-size: 2.5em; /* Ajusta el tamaño de la fuente según sea necesario */
+            font-weight: bold;
+            text-align: center;
+            padding: 0.5em 0;
+            color: rgb(42, 204, 209); /* Color del texto */;
+        }
+
+        h2 {
+            font-size: 2em; /* Ajusta el tamaño de la fuente según sea necesario */
+            font-weight: bold;
+            padding: 0.5em 0;
+            color: rgb(4, 115, 119); /* Color del texto */;
+        }
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+        width: 100%;
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        height: 10vh;
+
+        .inner-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+
+            div {
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+
+}
