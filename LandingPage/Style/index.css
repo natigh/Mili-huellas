@@ -30,7 +30,8 @@
                 #nosotros {
                     background-color: black;
                     font-family: Ink Free;
-                    color: rgb(255, 255, 255);                
+                    color: rgb(255, 255, 255);
+                    font-size: 1.5rem;                
                 }
                 #nosotros:hover {
                     color: rgb(12, 236, 56);

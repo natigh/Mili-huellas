@@ -19,7 +19,7 @@
 
         nav {
             position: relative;
-            padding-left: 80rem;
+            padding-left: 75rem;
             padding-bottom: 30rem;
             margin: 1rem;
 
@@ -27,10 +27,19 @@
                     margin: 0 1rem;
                 }
 
+                #inicio {
+                    background-color: black;
+                    font-family: Ink Free;
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+
                 #nosotros {
                     background-color: black;
                     font-family: Ink Free;
-                    color: rgb(255, 255, 255);                
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;              
                 }
                 #nosotros:hover {
                     color: rgb(12, 236, 56);
@@ -40,8 +49,175 @@
         #compra {
                 position: fixed;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+            }   
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Primera columna más pequeña, segunda más grande */
+        gap: 2rem; /* Espaciado entre columnas */
+        padding: 1rem;
+        
+        .marcas {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+
+            h3 {
+                font-family: ink Free;
+                font-size: 3rem;
+                margin-bottom: 1rem;
             }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 0.5rem;
+                    margin-left: 1rem;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        font-family: ink Free;
+                        font-size: 2rem;
+
+                        :hover {
+                            color: #07e4b4;
+                        }
+                    }
+                }
+            }
+
+            a {
+
+                img{
+                    margin: 7rem 1rem;
+                    box-shadow:0 2px 5px rgba(0, 0, 0, 0.8); ;
+
+                }
+            }
+        }
+
+        .adidas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 1rem; /* Espaciado entre items */
+
+            h2 {
+                font-family: ink Free;
+                font-size: 3rem;
+                margin-bottom: 1rem;
                 
+            }
+
+            .n {
+                text-align: center;
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    margin-bottom: 0.5rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    margin: 0.5rem 0;
+                    font-family: ink Free;
+                }
+            }
+        }    
+    }
+
+    .adidas-fem {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Primera columna más pequeña, segunda más grande */
+        gap: 2rem; /* Espaciado entre columnas */
+        padding: 1rem;
+
+
+        .mujer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 1rem; /* Espaciado entre items */
+
+            h2 {
+                font-family: ink Free;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            .m {
+                text-align: center;
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    margin-bottom: 0.5rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    margin: 0.5rem 0;
+                    font-family: ink Free;
+                }
+            }
+        }     
+    }
+
+    .adidas-men {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Primera columna más pequeña, segunda más grande */
+        gap: 2rem; /* Espaciado entre columnas */
+        padding: 1rem;
+
+
+        .hombre{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 1rem; /* Espaciado entre items */
+
+            h2 {
+                font-family: ink Free;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            .h {
+                text-align: center;
+                background-color: #fff;
+                padding: 1rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    margin-bottom: 0.5rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    margin: 0.5rem 0;
+                    font-family: ink Free;
+                }
+            }
+        }     
     }
 
     footer {
