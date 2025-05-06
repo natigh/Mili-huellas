@@ -205,6 +205,7 @@
         $nombre = $_POST['nombre'];
         $precio = $_POST['precio'];
         $cantidad = $_POST['cantidad'];
+        $marca = "Fila";
 
         if (!isset($_SESSION['carrito'])) {
             $_SESSION['carrito'] = [];
@@ -225,11 +226,11 @@
                 'codigo' => $codigo,
                 'nombre' => $nombre,
                 'precio' => $precio,
-                'cantidad' => $cantidad
+                'cantidad' => $cantidad,
+                'marca' => $marca
             ];
         }
 
-        print_r($_SESSION['carrito']); // Mostrar el carrito para depuración
         echo '<script>alert("Producto agregado al carrito")</script>';
     }
 ?>
@@ -261,7 +262,7 @@
                 <a id="nosotros" href="../AboutUs.php">Conócenos</a>
                 <button id="wsp"><a href="https://web.whatsapp.com/" target="_blank"><img
                             src="../img/redes/icons8-whatsapp.gif" alt="whatsapp" /></a></button>
-                <button id="compra"><a href="ListaCompras.php"><img src="../img/redes/icons8-comprar.gif"
+                <button id="compra"><a href="../ListaCompras.php"><img src="../img/redes/icons8-comprar.gif"
                             alt="listaCompra"></a></button>
             </nav>
         </div>
@@ -337,7 +338,7 @@
             <div></div>
             <div></div>
             <?php
-                foreach ($adidas_men as $product) {
+                foreach ($fila_men as $product) {
                     echo '<div class="h">';
                     echo '<img src="' . $product->img . '" alt="' . $product->id . '">';
                     echo '<h3>' . $product->code . '</h3>';

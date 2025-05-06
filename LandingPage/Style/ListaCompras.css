@@ -1,0 +1,131 @@
+@media screen and (max-width: 1920px)  {
+    * {
+       margin: 0;
+       padding: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        width: 100%;
+        height: 88vh; /* Altura del header */
+        box-shadow: 0 2px 35px rgb(0, 0, 0); 
+        background-image: url('../img/logomove.gif'); /* Ruta del GIF */
+        background-size: cover; /* Ajusta el GIF al tamaño del header */
+        background-repeat: no-repeat; /* Evita que el GIF se repita */
+        background-position: center; /* Centra el GIF dentro del header */
+
+        nav {
+            position: relative;
+            padding-left: 75rem;
+            padding-bottom: 32rem;
+            margin: 1rem;
+
+                #wsp {
+                    margin: 0 1rem;
+                }
+
+                #inicio {
+                    background-color: black;
+                    font-family: Ink Free;
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+
+                #nosotros {
+                    background-color: black;
+                    font-family: Ink Free;
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;              
+                }
+                #nosotros:hover {
+                    color: rgb(12, 236, 56);
+                }
+        }
+    }
+
+    section {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Alinea verticalmente */
+        width: 100%;
+        height: 45vh; /* Altura del contenedor */
+        font-family: ink free;
+        margin: 2.5em 0;
+
+        h1 {
+            font-size: 3rem; /* Tamaño de fuente grande */
+            color: #880788; /* Color del texto */
+            text-align: center; /* Centrar texto */
+            margin-top: 5rem; /* Espacio inferior */
+        }
+
+        .actbtn {
+            background-color: rgb(26, 25, 25);
+            color: white;
+            padding: .5rem;
+
+        }
+    }
+
+    #carrito {
+        width: 80%; /* Ancho de la tabla */
+        margin: 2rem auto; /* Centrar la tabla horizontalmente */
+        border-collapse: collapse; /* Colapsar bordes */
+        background-color: #f9f9f9; /* Fondo claro */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Sombra */
+    }
+    
+    #carrito th, #carrito td {
+        border: 1px solid #ddd; /* Bordes de las celdas */
+        padding: 1rem; /* Espaciado interno */
+        text-align: center; /* Centrar texto */
+    }
+    
+    #carrito th {
+        background-color: #692d99; /* Fondo de encabezado */
+        color: white; /* Texto blanco */
+        font-weight: bold; /* Negrita */
+        
+    }
+    
+    #carrito tr:nth-child(even) {
+        background-color: #f2f2f2; /* Fondo alternado */
+    }
+    
+    #carrito tr:hover {
+        background-color: #ddd; /* Fondo al pasar el mouse */
+    }
+    
+    #carrito td {
+        font-size: 1rem; /* Tamaño de fuente */
+        color: #333; /* Color del texto */
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+        width: 100%;
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        height: 10vh;
+        margin-top: 8rem;
+
+        .inner-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+
+            div {
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+}

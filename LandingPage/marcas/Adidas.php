@@ -205,6 +205,7 @@
         $nombre = $_POST['nombre'];
         $precio = $_POST['precio'];
         $cantidad = $_POST['cantidad'];
+        $marca = "Adidas";
 
         if (!isset($_SESSION['carrito'])) {
             $_SESSION['carrito'] = [];
@@ -225,11 +226,11 @@
                 'codigo' => $codigo,
                 'nombre' => $nombre,
                 'precio' => $precio,
-                'cantidad' => $cantidad
+                'cantidad' => $cantidad,
+                'marca' => $marca
             ];
         }
 
-        print_r($_SESSION['carrito']); // Mostrar el carrito para depuración
         echo '<script>alert("Producto agregado al carrito")</script>';
     }
 ?>
@@ -261,7 +262,7 @@
                 <a id="nosotros" href="../AboutUs.php">Conócenos</a>
                 <button id="wsp"><a href="https://web.whatsapp.com/" target="_blank"><img
                             src="../img/redes/icons8-whatsapp.gif" alt="whatsapp" /></a></button>
-                <button id="compra"><a href="ListaCompras.php"><img src="../img/redes/icons8-comprar.gif"
+                <button id="compra"><a href="../ListaCompras.php"><img src="../img/redes/icons8-comprar.gif"
                             alt="listaCompra"></a></button>
             </nav>
         </div>
@@ -296,6 +297,7 @@
                     echo '<input type="hidden" name="codigo" value="' . $product->id . '">';
                     echo '<input type="hidden" name="nombre" value="' . $product->code . '">';
                     echo '<input type="hidden" name="precio" value="' . $product->price . '">';
+                    echo '<input type="hidden" name="marca" value="' . $product->img . '">';
                     echo '<label for="cantidad">Cantidad:</label>';
                     echo '<input type="number" id="cantidad" name="cantidad" value="1" min="1">';
                     echo '<button type="submit">Agregar al carrito</button>';
@@ -321,6 +323,7 @@
                     echo '<input type="hidden" name="codigo" value="' . $product->id . '">';
                     echo '<input type="hidden" name="nombre" value="' . $product->code . '">';
                     echo '<input type="hidden" name="precio" value="' . $product->price . '">';
+                    echo '<input type="hidden" name="img" value="' . $product->img . '">';
                     echo '<label for="cantidad">Cantidad:</label>';
                     echo '<input type="number" id="cantidad" name="cantidad" value="1" min="1">';
                     echo '<button type="submit">Agregar al carrito</button>';
@@ -346,6 +349,7 @@
                     echo '<input type="hidden" name="codigo" value="' . $product->id . '">';
                     echo '<input type="hidden" name="nombre" value="' . $product->code . '">';
                     echo '<input type="hidden" name="precio" value="' . $product->price . '">';
+                    echo '<input type="hidden" name="img" value="' . $product->img . '">';
                     echo '<label for="cantidad">Cantidad:</label>';
                     echo '<input type="number" id="cantidad" name="cantidad" value="1" min="1">';
                     echo '<button type="submit">Agregar al carrito</button>';
