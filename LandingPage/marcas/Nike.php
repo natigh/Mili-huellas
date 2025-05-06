@@ -1,5 +1,237 @@
 <?php
+    session_start();
     require_once("../config.php");
+
+    $nike_children = [
+        (object)[
+            "id" => "n041",
+            "code" => "Cod.N041",
+            "price" => 250000,
+            "priceFormat" => "$250.000cop",
+            "img" => "../img/nike/n1.png"
+        ],
+        (object)[
+            "id" => "n042",
+            "code" => "Cod.N042",
+            "price" => 270000,
+            "priceFormat" => "$270.000cop",
+            "img" => "../img/nike/n2.png"
+        ],
+        (object)[
+            "id" => "n043",
+            "code" => "Cod.N043",
+            "price" => 230000,
+            "priceFormat" => "$230.000cop",
+            "img" => "../img/nike/n3.png"
+        ],
+        (object)[
+            "id" => "n044",
+            "code" => "Cod.N044",
+            "price" => 240000,
+            "priceFormat" => "$240.000cop",
+            "img" => "../img/nike/n4.png"
+        ],
+        (object)[
+            "id" => "n045",
+            "code" => "Cod.N045",
+            "price" => 290000,
+            "priceFormat" => "$290.000cop",
+            "img" => "../img/nike/n5.png"
+        ],
+        (object)[
+            "id" => "n046",
+            "code" => "Cod.N046",
+            "price" => 250000,
+            "priceFormat" => "$250.000cop",
+            "img" => "../img/nike/n6.png"
+        ],
+        (object)[
+            "id" => "n047",
+            "code" => "Cod.N047",
+            "price" => 260000,
+            "priceFormat" => "$260.000cop",
+            "img" => "../img/nike/n7.png"
+        ],
+        (object)[
+            "id" => "n048",
+            "code" => "Cod.N048",
+            "price" => 240000,
+            "priceFormat" => "$240.000cop",
+            "img" => "../img/nike/n8.png"
+        ],
+        (object)[
+            "id" => "n049",
+            "code" => "Cod.N049",
+            "price" => 220000,
+            "priceFormat" => "$220.000cop",
+            "img" => "../img/nike/n9.png"
+        ]
+    ];
+
+    $nike_women = [
+        (object)[
+            "id" => "m0851",
+            "code" => "Cod.M0851",
+            "price" => 350000,
+            "priceFormat" => "$350.000cop",
+            "img" => "../img/nike/m1.png"
+        ],
+        (object)[
+            "id" => "m0852",
+            "code" => "Cod.M0852",
+            "price" => 370000,
+            "priceFormat" => "$370.000cop",
+            "img" => "../img/nike/m2.png"
+        ],
+        (object)[
+            "id" => "m0853",
+            "code" => "Cod.M0853",
+            "price" => 330000,
+            "priceFormat" => "$330.000cop",
+            "img" => "../img/nike/m3.png"
+        ],
+        (object)[
+            "id" => "m0854",
+            "code" => "Cod.M0854",
+            "price" => 340000,
+            "priceFormat" => "$340.000cop",
+            "img" => "../img/nike/m4.png"
+        ],
+        (object)[
+            "id" => "m0855",
+            "code" => "Cod.M0855",
+            "price" => 390000,
+            "priceFormat" => "$390.000cop",
+            "img" => "../img/nike/m5.png"
+        ],
+        (object)[
+            "id" => "m0856",
+            "code" => "Cod.M0856",
+            "price" => 350000,
+            "priceFormat" => "$350.000cop",
+            "img" => "../img/nike/m6.png"
+        ],
+        (object)[
+            "id" => "m0857",
+            "code" => "Cod.M0857",
+            "price" => 360000,
+            "priceFormat" => "$360.000cop",
+            "img" => "../img/nike/m7.png"
+        ],
+        (object)[
+            "id" => "m0858",
+            "code" => "Cod.M0858",
+            "price" => 340000,
+            "priceFormat" => "$340.000cop",
+            "img" => "../img/nike/m8.png"
+        ],
+        (object)[
+            "id" => "m0859",
+            "code" => "Cod.M0859",
+            "price" => 320000,
+            "priceFormat" => "$320.000cop",
+            "img" => "../img/nike/m9.png"
+        ]
+    ];
+
+    $nike_men = [
+        (object)[
+            "id" => "h0361",
+            "code" => "Cod.H0361",
+            "price" => 350000,
+            "priceFormat" => "$350.000cop",
+            "img" => "../img/nike/h1.png"
+        ],
+        (object)[
+            "id" => "h0362",
+            "code" => "Cod.H0362",
+            "price" => 370000,
+            "priceFormat" => "$370.000cop",
+            "img" => "../img/nike/h2.png"
+        ],
+        (object)[
+            "id" => "h0363",
+            "code" => "Cod.H0363",
+            "price" => 330000,
+            "priceFormat" => "$330.000cop",
+            "img" => "../img/nike/h3.png"
+        ],
+        (object)[
+            "id" => "h0364",
+            "code" => "Cod.H0364",
+            "price" => 340000,
+            "priceFormat" => "$340.000cop",
+            "img" => "../img/nike/h4.png"
+        ],
+        (object)[
+            "id" => "h0365",
+            "code" => "Cod.H0365",
+            "price" => 390000,
+            "priceFormat" => "$390.000cop",
+            "img" => "../img/nike/h5.png"
+        ],
+        (object)[
+            "id" => "h0366",
+            "code" => "Cod.H0366",
+            "price" => 350000,
+            "priceFormat" => "$350.000cop",
+            "img" => "../img/nike/h6.png"
+        ],
+        (object)[
+            "id" => "h0367",
+            "code" => "Cod.H0367",
+            "price" => 360000,
+            "priceFormat" => "$360.000cop",
+            "img" => "../img/nike/h7.png"
+        ],
+        (object)[
+            "id" => "h0368",
+            "code" => "Cod.H0368",
+            "price" => 340000,
+            "priceFormat" => "$340.000cop",
+            "img" => "../img/nike/h8.png"
+        ],
+        (object)[
+            "id" => "h0369",
+            "code" => "Cod.H0369",
+            "price" => 320000,
+            "priceFormat" => "$320.000cop",
+            "img" => "../img/nike/h9.png"
+        ]
+    ];
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $codigo = $_POST['codigo'];
+        $nombre = $_POST['nombre'];
+        $precio = $_POST['precio'];
+        $cantidad = $_POST['cantidad'];
+
+        if (!isset($_SESSION['carrito'])) {
+            $_SESSION['carrito'] = [];
+        }
+
+        $producto_existente = false;
+        foreach ($_SESSION['carrito'] as &$producto) {
+            if ($producto['codigo'] === $codigo) {
+                $producto['cantidad'] += $cantidad; // Incrementar la cantidad
+                $producto_existente = true;
+                break;
+            }
+        }
+
+        // Si el producto no existe, agregarlo al carrito
+        if (!$producto_existente) {
+            $_SESSION['carrito'][] = [
+                'codigo' => $codigo,
+                'nombre' => $nombre,
+                'precio' => $precio,
+                'cantidad' => $cantidad
+            ];
+        }
+
+        print_r($_SESSION['carrito']); // Mostrar el carrito para depuración
+        echo '<script>alert("Producto agregado al carrito")</script>';
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,51 +286,23 @@
             </div>
             <div></div>
             <div></div>
-            <div class="n">
-                <img src="../img/nike/n1.png" alt="n041">
-                <h3>Cod.N041</h3>
-                <h3>$250.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n2.png" alt="n042">
-                <h3>Cod.N042</h3>
-                <h3>$270.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n3.png" alt="n043">
-                <h3>Cod.N043</h3>
-                <h3>$230.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n4.png" alt="n044">
-                <h3>Cod.N044</h3>
-                <h3>$240.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n5.png" alt="n045">
-                <h3>Cod.N045</h3>
-                <h3>$290.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n6.png" alt="n046">
-                <h3>Cod.N046</h3>
-                <h3>$250.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n7.png" alt="n047">
-                <h3>Cod.N047</h3>
-                <h3>$260.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n8.png" alt="n048">
-                <h3>Cod.N048</h3>
-                <h3>$240.000cop</h3>
-            </div>
-            <div class="n">
-                <img src="../img/nike/n9.png" alt="n049">
-                <h3>Cod.N049</h3>
-                <h3>$220.000cop</h3>
-            </div>
+            <?php
+                foreach ($nike_men as $product) {
+                    echo '<div class="n">';
+                    echo '<img src="' . $product->img . '" alt="' . $product->id . '">';
+                    echo '<h3>' . $product->code . '</h3>';
+                    echo '<h3>' . $product->priceFormat . '</h3>';
+                    echo '<form method="POST" action="">';
+                    echo '<input type="hidden" name="codigo" value="' . $product->id . '">';
+                    echo '<input type="hidden" name="nombre" value="' . $product->code . '">';
+                    echo '<input type="hidden" name="precio" value="' . $product->price . '">';
+                    echo '<label for="cantidad">Cantidad:</label>';
+                    echo '<input type="number" id="cantidad" name="cantidad" value="1" min="1">';
+                    echo '<button type="submit">Agregar al carrito</button>';
+                    echo '</form>';
+                    echo '</div>';
+                }
+            ?>
         </div>
     </section>
     <div class="nike-fem">
@@ -107,51 +311,23 @@
             <div><h2>Mujer - Nike</h2></div>
             <div></div>
             <div></div>
-            <div class="m">
-                <img src="../img/nike/m1.png" alt="m0851">
-                <h3>Cod.M0851</h3>
-                <h3>$350.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m2.png" alt="m0852">
-                <h3>Cod.M0852</h3>
-                <h3>$370.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m3.png" alt="m0853">
-                <h3>Cod.M0853</h3>
-                <h3>$330.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m4.png" alt="m0854">
-                <h3>Cod.M0854</h3>
-                <h3>$340.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m5.png" alt="m0855">
-                <h3>Cod.M0855</h3>
-                <h3>$390.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m6.png" alt="m0856">
-                <h3>Cod.M0856</h3>
-                <h3>$350.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m7.png" alt="m0857">
-                <h3>Cod.M0857</h3>
-                <h3>$360.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m8.png" alt="m0858">
-                <h3>Cod.M0858</h3>
-                <h3>$340.000cop</h3>
-            </div>
-            <div class="m">
-                <img src="../img/nike/m9.png" alt="m0859">
-                <h3>Cod.M0859</h3>
-                <h3>$320.000cop</h3>
-            </div>
+            <?php
+                foreach ($nike_women as $product) {
+                    echo '<div class="m">';
+                    echo '<img src="' . $product->img . '" alt="' . $product->id . '">';
+                    echo '<h3>' . $product->code . '</h3>';
+                    echo '<h3>' . $product->priceFormat . '</h3>';
+                    echo '<form method="POST" action="">';
+                    echo '<input type="hidden" name="codigo" value="' . $product->id . '">';
+                    echo '<input type="hidden" name="nombre" value="' . $product->code . '">';
+                    echo '<input type="hidden" name="precio" value="' . $product->price . '">';
+                    echo '<label for="cantidad">Cantidad:</label>';
+                    echo '<input type="number" id="cantidad" name="cantidad" value="1" min="1">';
+                    echo '<button type="submit">Agregar al carrito</button>';
+                    echo '</form>';
+                    echo '</div>';
+                }
+            ?>
         </div>
     </div>
     <div class="nike-men">
@@ -160,52 +336,23 @@
             <h2>Hombre - Nike</h2>
             <div></div>
             <div></div>
-            <div class="h">
-                <img src="../img/nike/h1.png" alt="h0361">
-                <h3>Cod.H0361</h3>
-                <h3>$350.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h2.png" alt="h0362">
-                <h3>Cod.H0362</h3>
-                <h3>$370.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h3.png" alt="h0363">
-                <h3>Cod.H0363</h3>
-                <h3>$330.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h4.png" alt="h0364">
-                <h3>Cod.H0364</h3>
-                <h3>$340.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h5.png" alt="h0365">
-                <h3>Cod.H0365</h3>
-                <h3>$390.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h6.png" alt="h0366">
-                <h3>Cod.H0366</h3>
-                <h3>$350.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h7.png" alt="h0367">
-                <h3>Cod.H0367</h3>
-                <h3>$360.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h8.png" alt="h0368">
-                <h3>Cod.H0368</h3>
-                <h3>$340.000cop</h3>
-            </div>
-            <div class="h">
-                <img src="../img/nike/h9.png" alt="h0369">
-                <h3>Cod.H0369</h3>
-                <h3>$320.000cop</h3>
-            </div>
-        </div>
+            <?php
+                foreach ($nike_children as $product) {
+                    echo '<div class="h">';
+                    echo '<img src="' . $product->img . '" alt="' . $product->id . '">';
+                    echo '<h3>' . $product->code . '</h3>';
+                    echo '<h3>' . $product->priceFormat . '</h3>';
+                    echo '<form method="POST" action="">';
+                    echo '<input type="hidden" name="codigo" value="' . $product->id . '">';
+                    echo '<input type="hidden" name="nombre" value="' . $product->code . '">';
+                    echo '<input type="hidden" name="precio" value="' . $product->price . '">';
+                    echo '<label for="cantidad">Cantidad:</label>';
+                    echo '<input type="number" id="cantidad" name="cantidad" value="1" min="1">';
+                    echo '<button type="submit">Agregar al carrito</button>';
+                    echo '</form>';
+                    echo '</div>';
+                }
+            ?>
         </div>
     </div>
     <footer>
