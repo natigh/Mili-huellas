@@ -34,14 +34,14 @@
         <div>
             <h3>Nuestras marcas</h3><br>
             <ul>
-                <li><a href="marcas/Adidas.php">Adidas</a></li><br>
-                <li><a href="marcas/Nike.php">Nike</a></li><br>
-                <li><a href="marcas/Puma.php">Puma</a></li><br>
-                <li><a href="marcas/Skechers.php">Skechers</a></li><br>
-                <li><a href="marcas/Reebok.php">Reebok</a></li><br>
-                <li><a href="marcas/UnderArmour.php">Under Armour</a></li><br>
-                <li><a href="marcas/Fila.php">Fila</a></li><br>
-                <li><a href="marcas/Personalizados.php">Personalizados</a></li><br>
+                <li><a href="marcas/Adidas.php">Adidas</a></li>
+                <li><a href="marcas/Nike.php">Nike</a></li>
+                <li><a href="marcas/Puma.php">Puma</a></li>
+                <li><a href="marcas/Skechers.php">Skechers</a></li>
+                <li><a href="marcas/Reebok.php">Reebok</a></li>
+                <li><a href="marcas/UnderArmour.php">Under Armour</a></li>
+                <li><a href="marcas/Fila.php">Fila</a></li>
+                <li><a href="marcas/Personalizados.php">Personalizados</a></li>
             </ul>
         </div>
         <div class="image-container">
@@ -69,9 +69,9 @@
             </div>  
         </div>
         <div class="redes">
-            <a href="https://instagram.com" target="_blank"><img src="img/redes/icons8-instagram.gif" alt="instagram" /><br>
-            <a href="https://www.facebook.com/profile.php?id=61576237070815" target="_blank"><img src="img/redes/icons8-facebook.gif" alt="facebook" /><br>
-            <a href="https://www.tiktok.com/@milihuellas" target="_blank"><img src="img/redes/icons8-tik-tok.gif" alt="Tiktok" /><br>   
+            <a href="https://instagram.com" target="_blank"><img src="img/redes/icons8-instagram.gif" alt="instagram" /><br/>
+            <a href="https://www.facebook.com/profile.php?id=61576237070815" target="_blank"><img src="img/redes/icons8-facebook.gif" alt="facebook" /><br/>
+            <a href="https://www.tiktok.com/@milihuellas" target="_blank"><img src="img/redes/icons8-tik-tok.gif" alt="Tiktok" /><br/>
         </div>
     </section>
     <footer>

@@ -36,7 +36,7 @@
     </header>
 
     <div class="container">
-        <div class="slaider-container">
+        <div class="slider-container">
             <h1>Preguntas Frecuentes</h1>
             <div class="pregunta">
                 <h2>¿Cómo puedo comprar?</h2>
@@ -95,14 +95,7 @@
             </div>
             <div>Contacto: Milihuellas06@gmail.com</div>
         </div>
-        <div class="inner-footer">
-            <div>
-                <a href="preguntas.php">
-                    <img src="img/redes/icons8-pregunta.gif" alt="preguntas frecuentes" width="20" height="20"/>
-                </a>
-            </div>
-            <div>Preguntas Frecuentes</div>
-        </div>
+        
     </footer>
  
 </body>

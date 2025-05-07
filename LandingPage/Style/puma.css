@@ -231,8 +231,7 @@
         padding: 0 1em;
         width: 100%;
         box-sizing: border-box; /* Incluye padding en el ancho total */
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        height: 10vh;
+        
 
         .inner-footer {
             display: flex;
@@ -243,5 +242,73 @@
             div {
                 margin-right: 0.5em;
             }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        footer{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            padding: 2em 0; /* Espacio alrededor del footer */
+            margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+            
+        }
+    
+        header {
+            nav {
+                padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+                padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+                text-align: center;
+            }
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna que ocupa el 100% */
+            gap: 1rem; /* Espaciado entre las filas */
+            padding: 1rem;
+    
+            .puma {
+                display: grid;
+                grid-template-columns: 1fr; /* Una sola columna */
+                gap: 1rem; /* Espaciado entre filas y columnas */
+    
+                h2 {
+                    text-align: center;
+                    padding-top: 2em;
+                }
+            }
+        }
+    
+        .puma-men > div:first-child,
+        .puma-fem > div:first-child {
+            display: none; /* Oculta el primer div */
+        }
+    
+        .puma-men,
+        .puma-fem {
+            display: block; /* Cambia a diseño de bloque */
+            width: 100%; /* Ocupa el 100% del ancho */
+            padding: 0; /* Elimina el padding */
+            margin: 0; /* Elimina márgenes */
+    
+            h2 {
+                text-align: center;
+                padding-top: 2em;
+            }
+        }
+    
+        .puma-men > div,
+        .puma-fem > div {
+            width: 100%; /* Asegura que los hijos también ocupen el 100% */
+        }
+    
+        .puma-men .hombre,
+        .puma-fem .mujer {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna */
+            gap: 1rem; /* Espaciado entre filas */
+            width: 100%; /* Asegura que el grid ocupe todo el ancho */
         }
     }

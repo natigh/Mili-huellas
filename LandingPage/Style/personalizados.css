@@ -159,8 +159,6 @@
         padding: 0 1em;
         width: 100%;
         box-sizing: border-box; /* Incluye padding en el ancho total */
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        height: 10vh;
 
         .inner-footer {
             display: flex;
@@ -171,5 +169,37 @@
             div {
                 margin-right: 0.5em;
             }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        footer{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            padding: 2em 0; /* Espacio alrededor del footer */
+            margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+            
+        }
+    
+        header {
+            nav {
+                padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+                padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+                text-align: center;
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna que ocupa el 100% */
+            gap: 1rem; /* Espaciado entre las filas */
+            width: 80%;
+
+            .marcas {
+                margin-left: 0;
+            }
+
+            margin-left: -1rem;
         }
     }

@@ -85,8 +85,7 @@
         align-items: center;
         padding: 0 1em;
         width: 100%;
-        box-sizing: border-box; /* Incluye padding en el ancho total */
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        box-sizing: border-box; 
         height: 10vh;
 
         .inner-footer {
@@ -100,3 +99,29 @@
             }
         }
     }
+
+@media screen and (max-width: 768px) {
+    .container {
+
+        .slider-container {
+            padding: 1em; /* Espacio alrededor del slider */
+        }
+
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        padding: 2em 0; /* Espacio alrededor del footer */
+        margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+        
+    }
+
+    header {
+        nav {
+            padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+            padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+            text-align: center;
+        }
+    }
+}

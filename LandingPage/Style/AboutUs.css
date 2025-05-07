@@ -161,7 +161,6 @@
         align-items: center; /* Alinea verticalmente los elementos */
         width: 100%;
         height: 30em;
-        box-shadow:  5px 5px 5px 5px gray;
         margin-top: 1em;
         
 
@@ -270,8 +269,7 @@
         padding: 0 1em;
         width: 100%;
         box-sizing: border-box; /* Incluye padding en el ancho total */
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        height: 10vh;
+        
 
         .inner-footer {
             display: flex;
@@ -281,6 +279,76 @@
 
             div {
                 margin-right: 0.5em;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .hist1 {
+
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+
+            .historia {
+                padding: 1em;
+            }
+
+            .historia p {
+                text-align: center; /* Centra el texto */
+            }
+        }
+
+        .m-v {
+            display: flex;
+            flex-direction: column-reverse; /* Cambia a columna en pantallas pequeñas */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+
+            .vision-mision {
+                padding: 1em;
+            }
+        }
+
+        .valores {
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+
+            .val {
+                padding: 1em;
+            }
+        }   
+        
+        .fundadoras {
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+
+            h3 {
+                padding: 1em;
+            }
+
+            .s-n, .v-l {
+                display: flex;
+                flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+                height: auto; /* Permite que la altura se ajuste automáticamente */
+            }
+        }
+       
+        footer{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            padding: 2em 0; /* Espacio alrededor del footer */
+            margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+            
+        }
+    
+        header {
+            nav {
+                padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+                padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+                text-align: center;
             }
         }
     }

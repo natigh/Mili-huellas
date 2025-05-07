@@ -19,7 +19,7 @@
 
         nav {
             position: relative;
-            padding-left: 80rem;
+            padding-left: 75rem;
             padding-bottom: 32rem;
             margin: 1rem;
 
@@ -78,6 +78,7 @@
         }
         
         a {
+            text-decoration: none;
             color: rgb(0, 0, 0);
             font-family: Ink Free;
             position: center;
@@ -126,8 +127,7 @@
         padding: 0 1em;
         width: 100%;
         box-sizing: border-box; /* Incluye padding en el ancho total */
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        height: 10vh;
+        
 
         .inner-footer {
             display: flex;
@@ -140,5 +140,54 @@
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+
+        section{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+
+            .image-container{
+                flex-basis: 100%; /* Cambia a 100% en pantallas pequeñas */
+                padding: 0; /* Elimina el padding en pantallas pequeñas */
+                margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
+
+                .slider-container {
+                    width: 80%;
+                    overflow-x: scroll;
+
+                    img {
+                        width: 100%;
+                        height: auto; /* Mantiene la proporción de la imagen */
+                    }
+                }
+            }
+
+            .redes {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 1em;
+                margin: 1em;
+            }
+        }
+        
+        footer{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            padding: 2em 0; /* Espacio alrededor del footer */
+            margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+            
+        }
+    
+        header {
+
+            nav {
+                padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+                padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+                text-align: center;
+            }
+        }
+    }
+
 
 
