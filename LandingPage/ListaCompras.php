@@ -2,6 +2,13 @@
     session_start();
     require_once("config.php");
 
+    require '../PHPMailer/src/PHPMailer.php';
+    require '../PHPMailer/src/SMTP.php';
+    require '../PHPMailer/src/Exception.php';
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
     // Procesar acciones de aumentar o disminuir cantidad
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         $action = $_POST['action'];
@@ -23,6 +30,62 @@
         } elseif ($action === 'clear') {
             // Limpiar todo el carrito
             unset($_SESSION['carrito']);
+        } elseif ($action === 'send') {
+            $nombre = htmlspecialchars($_POST['txtNames']);
+            $email = htmlspecialchars($_POST['txtEmail']);
+            $telefono = htmlspecialchars($_POST['txtTelefono']);
+
+            $message = "<h1>Nombre: $nombre\n</h1>";
+            $message .= "<h2>Email: $email\n</h2>";
+            $message .= "<p>Teléfono: $telefono\n</p>";
+            $message .= "\n\n\n\n";
+
+            if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) > 0) {
+                $total = 0;
+                $message .= "<table id='carrito' border='1'>";
+                $message .= "<tr><th>Código</th><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Marca</th></tr>";
+                $message .= "<tbody>";
+                foreach ($_SESSION['carrito'] as $producto) {
+                    $message .= "<tr>";
+                    $message .= "<td>" . $producto['codigo'] . "</td>";
+                    $message .= "<td>" . $producto['nombre'] . "</td>";
+                    $message .= "<td>$" . $producto['precio'] . "cop</td>";
+                    $total += $producto['precio'] * $producto['cantidad'];
+                    $message .= "<td>" . $producto['cantidad'] . "</td>";
+                    $message .= "<td>" . $producto['marca'] . "</td>";
+                    $message .= "</tr>";
+
+                }
+                $message .= "</tbody>";
+                $message .= "</table>";
+                $message .= "\n\n\n\n";
+                $message .= "<h2>Total: $" . $total . "cop</h2>";
+            }
+
+
+            $mail = new PHPMailer(true);
+
+            try {
+                $mail->isSMTP();
+                $mail->Host = 'smtp.gmail.com'; // Servidor SMTP (por ejemplo, Gmail)
+                $mail->SMTPAuth = true;
+                $mail->Username = 'milihuellas06@gmail.com'; // Tu correo
+                $mail->Password = 'lczb xhtc noul cnfn'; // Tu contraseña
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                $mail->Port = 587;
+
+                $mail->setFrom('milihuellas06@gmail.com', 'Milihuellas');
+                $mail->addAddress('milihuellas06@gmail.com'); // Destinatario
+                $mail->Subject = 'Compra Milihuellas';
+                $mail->isHTML(true); // Establecer el formato del correo como HTML
+                $mail->Body = $message;
+
+                // Enviar correo
+                $mail->send();
+                echo "<script>alert('Compra enviada.'); window.location.href = 'index.php';</script>";
+            } catch (Exception $e) {
+                echo "<script>alert('Error al enviar el correo: {$mail->ErrorInfo}');</script>";
+            }
         }
     }
 
@@ -62,17 +125,14 @@
     </header>
     <section>
         <div>
-
             <div>
-
                 <h1>Carrito de Compras</h1>
             </div>
-
-            <div>
-
+            <div class="c-f">
                 <?php
                     if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) > 0) {
                         $index = 0; // Inicializar el índice
+                        $total = 0; // Inicializar el total
                         echo "<table id='carrito'>";
                         echo "<tr><th>Código</th><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Marca</th><th>Acciones</th></tr>";
                         foreach ($_SESSION['carrito'] as $producto) {
@@ -81,12 +141,13 @@
                             echo "<td>" . $producto['nombre'] . "</td>";
                             echo "<td>" . $producto['precio'] . "</td>";
                             echo "<td>" . $producto['cantidad'] . "</td>";
+                            $total += $producto['precio'] * $producto['cantidad']; // Calcular el total
                             echo "<td>" . $producto['marca'] . "</td>";
                             echo "<td>";
                             echo "<form method='POST' action=''>";
                             echo "<input type='hidden' name='index' value='" . $index . "'>";
-                            echo "<button class='actbtn' type='submit' name='action' value='increase'>+</button>";
-                            echo "<button class='actbtn' type='submit' name='action' value='decrease'>-</button>";
+                            echo "<button class='btn-mas' type='submit' name='action' value='increase'>+</button>";
+                            echo "<button class='btn-menos' type='submit' name='action' value='decrease'>-</button>";
                             echo "</form>";
                             echo "</td>";
                             echo "</tr>";
@@ -95,8 +156,10 @@
                         }
                         echo "</table>";
 
-                            // Botón "Limpiar Todo"
-                        echo "<form method='POST' action='' style='text-align: center;'>";
+                        echo "<h2>Total: $" . $total . "cop</h2>";
+
+                        // Botón "Limpiar Todo"
+                        echo "<form method='POST' action='' class='form-clear'>";
                         echo "<button class='actbtn' type='submit' name='action' value='clear'>Limpiar Todo</button>";
                         echo "</form>";
                     } else {
@@ -104,6 +167,24 @@
                     }
                 
                 ?>
+            </div>
+            <div class="form-compras">
+                <h2>Contacto</h2>
+                <form method="POST" action="">
+                    <div class="form-group">
+                        <label for="names">Nombre completo</label>
+                        <input type="text" id="names" name="txtNames" required placeholder="Nombres y apellidos">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="txtEmail" required placeholder="Correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" name="txtTelefono" required placeholder="Teléfono">
+                    </div>
+                    <button class='actbtn' type='submit' name='action' value='send'>Enviar</button>
+                </form>
             </div>
         </div>
     </section>

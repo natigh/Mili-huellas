@@ -366,13 +366,13 @@
         </div>
         <div class="inner-footer">
             <div>
-                <a href="email.php"><img src="../img/redes/icons8-mensaje.gif" alt="e-mail" width="20" height="20" />
+                <a href="../email.php"><img src="../img/redes/icons8-mensaje.gif" alt="e-mail" width="20" height="20" />
             </div>
             <div>Contacto: Milihuellas06@gmail.com</div>
         </div>
         <div class="inner-footer">
             <div>
-                <a href="preguntas.php">
+                <a href="../preguntas.php">
                     <img src="../img/redes/icons8-pregunta.gif" alt="preguntas frecuentes" width="20" height="20" />
                 </a>
             </div>

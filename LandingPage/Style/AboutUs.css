@@ -1,4 +1,4 @@
-@media screen and (max-width: 1920px)  {
+
     * {
        margin: 0;
        padding: 0;
@@ -20,8 +20,10 @@
         nav {
             position: relative;
             padding-left: 80rem;
-            padding-bottom: 30rem;
+            padding-bottom: 32rem;
             margin: 1rem;
+            margin-top: 1rem;
+            
 
                 #wsp {
                     margin: 0 1rem;
@@ -282,4 +284,3 @@
             }
         }
     }
-}

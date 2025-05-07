@@ -9,6 +9,7 @@
     <title>Milihuellas</title>
     <link rel="icon" href="<?php echo URL;?>/img/Logo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--base href="/LandingPage/"-->
     <link rel="stylesheet" href="Style/index.css">
         
         <meta name="author" content="Videojuegos & Desarrollo">

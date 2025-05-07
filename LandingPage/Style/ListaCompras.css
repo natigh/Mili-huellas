@@ -1,4 +1,4 @@
-@media screen and (max-width: 1920px)  {
+
     * {
        margin: 0;
        padding: 0;
@@ -49,12 +49,13 @@
 
     section {
         display: flex;
-        justify-content: center; /* Centra horizontalmente */
+        justify-content: space-evenly; /* Centra horizontalmente */
         align-items: center; /* Alinea verticalmente */
         width: 100%;
-        height: 45vh; /* Altura del contenedor */
+        height: 65em; /* Altura del contenedor */
         font-family: ink free;
-        margin: 2.5em 0;
+        margin-top: -8rem; /* Espacio superior */
+        
 
         h1 {
             font-size: 3rem; /* Tamaño de fuente grande */
@@ -65,13 +66,80 @@
 
         .actbtn {
             background-color: rgb(26, 25, 25);
-            color: white;
+            color: rgb(255, 255, 255);
             padding: .5rem;
+            font-family: ink free;
+            font-size: 1.5rem; /* Tamaño de fuente del botón */
+        }
 
+        .btn-mas, .btn-menos {
+            background-color: rgb(26, 25, 25);
+            color: rgb(255, 255, 255);
+            padding: .5rem;
+            font-family: ink free;
+            font-size: 1rem; /* Tamaño de fuente del botón */
+        }
+
+        h2 {
+            font-size: 2rem; /* Tamaño de fuente grande */
+            color: #880788; /* Color del texto */
+            text-align: center; /* Centrar texto */
+            margin-top: .5rem; /* Espacio inferior */
+        }
+        
+        .form-compras{
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            height: auto; /* Altura del contenedor */
+            font-family: ink free;
+            margin-top: 2em;
+            gap: 2rem; /* Espacio entre los elementos */
+            background-image: url('../img/Background\ Texture\ GIF\ by\ Gifes\ Con\ Ensalada.gif'); /* Fondo de la sección */
+            text-align: center;
+
+            .form-group {
+                display: flex;
+                flex-direction: column; /* Alinea los elementos en columna */
+                gap: 0.5rem; /* Espaciado entre los elementos */
+            }
+
+            label {
+                font-size: 1.5rem; /* Tamaño de fuente para las etiquetas */
+                color: rgb(6, 0, 8); /* Color de texto */
+                font-weight: bold;
+            }
+
+            button{
+                margin-top: 2rem;
+                background-color: rgb(26, 25, 25);
+                color: rgb(255, 255, 255);
+                padding: .5rem;
+                font-family: ink free;
+                font-size: 1.5rem; /* Tamaño de fuente del botón */
+
+            }
+    
+        }   
+        
+        .form-clear {
+            text-align: center; /* Centrar el contenido horizontalmente */
+            margin-top: 1rem; /* Espacio superior */
+        }
+        
+        .form-clear .actbtn {
+            padding: 0.5rem 1rem; /* Tamaño del botón */
+            font-size: 1.5rem; /* Tamaño de la fuente */
+            background-color: rgb(26, 25, 25);
+            color: rgb(255, 255, 255);
+            border: none; /* Sin bordes */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
         }
     }
 
     #carrito {
+        margin-right: 2rem;
         width: 80%; /* Ancho de la tabla */
         margin: 2rem auto; /* Centrar la tabla horizontalmente */
         border-collapse: collapse; /* Colapsar bordes */
@@ -113,8 +181,7 @@
         width: 100%;
         box-sizing: border-box; /* Incluye padding en el ancho total */
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        height: 10vh;
-        margin-top: 8rem;
+        height: 5vh;
 
         .inner-footer {
             display: flex;
@@ -128,4 +195,3 @@
         }
     }
 
-}

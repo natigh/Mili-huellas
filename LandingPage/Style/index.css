@@ -1,4 +1,4 @@
-@media screen and (max-width: 1920px)  {
+
     * {
        margin: 0;
        padding: 0;
@@ -20,7 +20,7 @@
         nav {
             position: relative;
             padding-left: 80rem;
-            padding-bottom: 30rem;
+            padding-bottom: 32rem;
             margin: 1rem;
 
                 #wsp {
@@ -53,6 +53,7 @@
         width: 100%; /* Asegura que ocupe todo el ancho */
         box-sizing: border-box; /* Incluye padding en el ancho total */
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        margin-top: -1rem;
         
         div {
             margin: 0;
@@ -62,9 +63,10 @@
         
         h3 {
             font-family: Ink Free;
-            font-size: 2em; /* Adjust as needed */
+            font-size: 3em; /* Adjust as needed */
             font-weight: 300;
             position: center;
+            color: blueviolet;
         }
         
         li {
@@ -79,6 +81,7 @@
             color: rgb(0, 0, 0);
             font-family: Ink Free;
             position: center;
+            font-size: 2em; /* Adjust as needed */
 
             :hover {
                 color: rgb(12, 236, 56);
@@ -139,4 +142,3 @@
     }
 
 
-}

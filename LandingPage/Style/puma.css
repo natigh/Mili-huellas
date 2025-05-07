@@ -1,4 +1,4 @@
-@media screen and (max-width: 1920px)  {
+
     * {
        margin: 0;
        padding: 0;
@@ -20,7 +20,7 @@
         nav {
             position: relative;
             padding-left: 75rem;
-            padding-bottom: 30rem;
+            padding-bottom: 32rem;
             margin: 1rem;
 
                 #wsp {
@@ -68,6 +68,7 @@
                 font-family: ink Free;
                 font-size: 3rem;
                 margin-bottom: 1rem;
+                color: blueviolet;
             }
 
             ul {
@@ -110,6 +111,7 @@
                 font-family: ink Free;
                 font-size: 3rem;
                 margin-bottom: 1rem;
+                color: rgb(37, 117, 209);
                 
             }
 
@@ -152,6 +154,7 @@
                 font-family: ink Free;
                 font-size: 3rem;
                 margin-bottom: 1rem;
+                color: rosybrown;
                 
             }
 
@@ -194,6 +197,7 @@
                 font-family: ink Free;
                 font-size: 3rem;
                 margin-bottom: 1rem;
+                color: green;
                 
             }
 
@@ -241,4 +245,3 @@
             }
         }
     }
-}

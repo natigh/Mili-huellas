@@ -181,7 +181,7 @@
         </div>
         <div class="inner-footer">
             <div>
-                <a href="preguntas.php">
+                <a href="../preguntas.php">
                     <img src="../img/redes/icons8-pregunta.gif" alt="preguntas frecuentes" width="20" height="20" />
                 </a>
             </div>

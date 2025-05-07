@@ -1,4 +1,4 @@
-@media screen and (max-width: 1920px)  {
+
     * {
        margin: 0;
        padding: 0;
@@ -20,7 +20,7 @@
         nav {
             position: relative;
             padding-left: 75rem;
-            padding-bottom: 30rem;
+            padding-bottom: 32rem;
             margin: 1rem;
 
                 #wsp {
@@ -38,8 +38,8 @@
                 #nosotros {
                     background-color: black;
                     font-family: Ink Free;
-                    color: rgb(255, 255, 255);
-                    font-size: 1.5rem;                
+                    color: rgb(255, 255, 255); 
+                    font-size: 1.5rem;              
                 }
                 #nosotros:hover {
                     color: rgb(12, 236, 56);
@@ -127,4 +127,3 @@
     }
 
 
-}
