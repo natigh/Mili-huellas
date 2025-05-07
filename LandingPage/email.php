@@ -73,27 +73,28 @@
             </nav>
         </div>
     </header>
-
-    <form method="POST" action="">
-        <h3>!Dejanos un mensaje con tus preguntas!</h3>
-    <div class="form-group">
-        <label for="names">Nombre y apellido</label>
-        <input type="text" id="names" name="txtNames" required placeholder="Nombres y apellidos">
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="txtEmail" required placeholder="Correo electrónico">
-    </div>
-    <div class="form-group">
-        <label for="telefono">Teléfono</label>
-        <input type="text" id="telefono" name="txtTelefono" required placeholder="Teléfono">
-    </div>
-    <div class="form-group">
-        <label for="comentarios">Comentarios</label>
-        <textarea id="comentarios" name="txtComentarios" maxlength="500" placeholder="Escribe tus comentarios aquí"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+    <section>
+        <form method="POST" action="">
+            <h3>!Dejanos un mensaje con tus preguntas!</h3>
+            <div class="form-group">
+                <label for="names">Nombre y apellido</label>
+                <input type="text" id="names" name="txtNames" required placeholder="Nombres y apellidos">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="txtEmail" required placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="txtTelefono" required placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="txtComentarios" maxlength="500" placeholder="Escribe tus comentarios aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
 
     <footer>
         <div class="inner-footer">
