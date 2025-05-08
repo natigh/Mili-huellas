@@ -159,4 +159,40 @@
         }
     }
 
+    @media screen and (min-width: 768px) {
+
+        footer{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            padding: 2em 0; /* Espacio alrededor del footer */
+            margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+            
+        }
+    
+        header {
+            nav {
+                padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+                padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+                text-align: center;
+            }
+        }
+
+        form {
+            width: 100%; /* Asegura que el formulario ocupe el 100% del ancho disponible */
+            max-width: 100%; /* Evita que exceda el ancho de la pantalla */
+            padding: 1rem; /* Reduce el padding interno */
+            margin: 2rem auto ; /* Centra el formulario */
+            box-sizing: border-box; /* Incluye el padding en el ancho total */
+
+        }
+    
+        textarea {
+            width: 100%; /* Asegura que el textarea ocupe todo el ancho */
+        }
+    
+        button {
+            width: auto; /* Ajusta el ancho del botón automáticamente */
+        }
+    }
+
 

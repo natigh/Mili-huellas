@@ -311,3 +311,71 @@
             width: 100%; /* Asegura que el grid ocupe todo el ancho */
         }
     }
+
+    @media only screen and (min-width: 768px) {
+
+        footer{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            padding: 2em 0; /* Espacio alrededor del footer */
+            margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+            
+        }
+    
+        header {
+            nav {
+                padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+                padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+                text-align: center;
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna que ocupa el 100% */
+            gap: 1rem; /* Espaciado entre las filas */
+            padding: 1rem;
+    
+            .reebok {
+                display: grid;
+                grid-template-columns: 1fr; /* Una sola columna */
+                gap: 1rem; /* Espaciado entre filas y columnas */
+    
+                h2 {
+                    text-align: center;
+                    padding-top: 2em;
+                }
+            }
+        }
+    
+        .reebok-men > div:first-child,
+        .reebok-fem > div:first-child {
+            display: none; /* Oculta el primer div */
+        }
+    
+        .reebok-men,
+        .reebok-fem {
+            display: block; /* Cambia a diseño de bloque */
+            width: 100%; /* Ocupa el 100% del ancho */
+            padding: 0; /* Elimina el padding */
+            margin: 0; /* Elimina márgenes */
+    
+            h2 {
+                text-align: center;
+                padding-top: 2em;
+            }
+        }
+    
+        .reebok-men > div,
+        .reebok-fem > div {
+            width: 100%; /* Asegura que los hijos también ocupen el 100% */
+        }
+    
+        .reebok-men .hombre,
+        .reebok-fem .mujer {
+            display: grid;
+            grid-template-columns: 1fr; /* Una sola columna */
+            gap: 1rem; /* Espaciado entre filas */
+            width: 100%; /* Asegura que el grid ocupe todo el ancho */
+        }
+    }

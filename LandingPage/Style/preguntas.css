@@ -125,3 +125,32 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+
+    footer{
+        display: flex;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        padding: 2em 0; /* Espacio alrededor del footer */
+        margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+        
+        
+    }
+
+    header {
+
+        nav {
+            padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+            padding-top: 0rem; /* Espacio en la parte inferior del menú de navegación */
+            text-align: center;
+        }
+    }
+
+    .container {
+
+        .slider-container {
+            padding: 1em; /* Espacio alrededor del slider */
+        }
+
+    }
+}

@@ -52,7 +52,6 @@
         padding: 0;
         width: 100%; /* Asegura que ocupe todo el ancho */
         box-sizing: border-box; /* Incluye padding en el ancho total */
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         margin-top: -1rem;
         
         div {
@@ -189,5 +188,53 @@
         }
     }
 
+    @media only screen and (min-width: 768px) {
+
+        footer{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+            padding: 2em 0; /* Espacio alrededor del footer */
+            margin-bottom: 1em; /* Espacio en la parte inferior del footer */
+            
+            
+        }
+    
+        header {
+
+            nav {
+                padding-left: 1rem; /* Espacio a la izquierda del menú de navegación */
+                padding-top: 1rem; /* Espacio en la parte inferior del menú de navegación */
+                text-align: center;
+            }
+        }
+
+        section{
+            display: flex;
+            flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+
+            .image-container{
+                flex-basis: 100%; /* Cambia a 100% en pantallas pequeñas */
+                padding: 0; /* Elimina el padding en pantallas pequeñas */
+                margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
+
+                .slider-container {
+                    width: 80%;
+                    overflow-x: scroll;
+
+                    img {
+                        width: 100%;
+                        height: auto; /* Mantiene la proporción de la imagen */
+                    }
+                }
+            }
+
+            .redes {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 1em;
+                margin: 1em;
+            }
+        }
+    }
 
 

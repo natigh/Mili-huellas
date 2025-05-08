@@ -91,7 +91,7 @@
         </div>
         <div class="inner-footer">
             <div>
-                <a href=""><img src="img/redes/icons8-mensaje.gif" alt="e-mail" width="20" height="20" />
+                <a href="email.php"><img src="img/redes/icons8-mensaje.gif" alt="e-mail" width="20" height="20" />
             </div>
             <div>Contacto: Milihuellas06@gmail.com</div>
         </div>
